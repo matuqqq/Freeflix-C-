@@ -1,0 +1,67 @@
+// Diagrama de Clases Sistema Freeflix
+// Copiar en: http://yuml.me/diagram/scruffy/class/draw
+
+// Interfaces
+[<<interface>>;IUser||+Login();+Logout();+ValidateCredentials()]
+[<<interface>>;IAudiovisual||+GetInfo();+UpdateRating();+SetDuration()]
+[<<interface>>;IContentManager||+AddContent();+UpdateContent();+DeleteContent();+SearchContent()]
+[<<interface>>;IRatingSystem||+AddRating();+CalculateAverage();+GetUserRating()]
+
+// Clases Abstractas
+[<<abstract>>;BaseUser||#id:string;#username:string;#email:string;#password:string||+ValidateCredentials();+GetUserInfo();{abstract}+GetPermissions()]
+[<<abstract>>;BaseAudiovisual||#id:string;#title:string;#genre:string;#shortDescription:string;#rating:double;#ratings:List<Rating>||+UpdateRating();+GetAverageRating();{abstract}+GetSpecificInfo()]
+
+// Clases Concretas - Usuarios
+[User||+GetPermissions():UserPermissions]
+[Moderator||+GetPermissions():UserPermissions;+CanModifyContent():bool]
+
+// Clases Concretas - Contenido
+[Movie||+duration:int;+director:string||+GetSpecificInfo():string;+SetDuration(int):void]
+[Series||+episodes:int;+seasons:int;+episodeDuration:int||+GetSpecificInfo():string;+AddEpisode():void]
+
+// Clases de Datos
+[Rating||+id:string;+userId:string;+audiovisualId:string;+value:int;+createdAt:DateTime||+IsValid():bool]
+[UserPermissions||+canRate:bool;+canModifyContent:bool;+canDeleteContent:bool||+HasPermission(string):bool]
+
+// Servicios y Managers
+[AuthService||+users:List<BaseUser>;-instance:AuthService||+GetInstance():AuthService;+Authenticate(string,string):BaseUser;+RegisterUser(BaseUser):bool]
+[ContentService||+content:List<BaseAudiovisual>;-instance:ContentService||+GetInstance():ContentService;+GetAllMovies():List<Movie>;+GetAllSeries():List<Series>;+SearchByGenre(string):List<BaseAudiovisual>;+AddContent(BaseAudiovisual):bool]
+[RatingService||+ratings:List<Rating>;-instance:RatingService||+GetInstance():RatingService;+AddRating(Rating):bool;+CalculateAverage(string):double;+GetUserRating(string,string):Rating]
+
+// Forms
+[FRM_Login||+TXT_Username:TextBox;+TXT_Password:TextBox;+BTN_Login:Button;+PNL_LoginContainer:Panel||+ValidateLogin():void;+ShowMainForm():void]
+[FRM_Main||+PNL_Navigation:Panel;+BTN_Movies:Button;+BTN_Series:Button;+BTN_Admin:Button;+currentUser:BaseUser||+LoadUserInterface():void;+CheckPermissions():void]
+[FRM_Movies||+DGV_Movies:DataGridView;+TXT_Search:TextBox;+CMB_Genre:ComboBox;+BTN_Rate:Button;+PNL_MovieDetails:Panel||+LoadMovies():void;+SearchMovies():void;+RateMovie():void]
+[FRM_Series||+DGV_Series:DataGridView;+TXT_Search:TextBox;+CMB_Genre:ComboBox;+BTN_Rate:Button;+PNL_SeriesDetails:Panel||+LoadSeries():void;+SearchSeries():void;+RateSeries():void]
+[FRM_Admin||+DGV_Content:DataGridView;+TXT_Title:TextBox;+TXT_Genre:TextBox;+TXT_Description:TextBox;+NUM_Duration:NumericUpDown;+BTN_Add:Button;+BTN_Update:Button;+BTN_Delete:Button||+LoadContent():void;+AddContent():void;+UpdateContent():void]
+[FRM_VideoPlayer||+VLC_Player:VlcControl;+BTN_Play:Button;+BTN_Pause:Button;+BTN_Stop:Button;+TRK_Progress:TrackBar||+LoadVideo(string):void;+PlayVideo():void;+PauseVideo():void]
+
+// Relaciones de Herencia
+[BaseUser]^-[User]
+[BaseUser]^-[Moderator]
+[BaseAudiovisual]^-[Movie]
+[BaseAudiovisual]^-[Series]
+
+// Implementación de Interfaces
+[User]-.-^[IUser]
+[Moderator]-.-^[IUser]
+[Movie]-.-^[IAudiovisual]
+[Series]-.-^[IAudiovisual]
+[ContentService]-.-^[IContentManager]
+[RatingService]-.-^[IRatingSystem]
+
+// Composición y Agregación
+[AuthService]++->*[BaseUser]
+[ContentService]++->*[BaseAudiovisual]
+[RatingService]++->*[Rating]
+[BaseAudiovisual]++->*[Rating]
+[FRM_Main]->1[BaseUser]
+[FRM_Movies]->1[ContentService]
+[FRM_Series]->1[ContentService]
+[FRM_Admin]->1[ContentService]
+
+// Dependencias
+[FRM_Login]..>[AuthService]
+[FRM_Movies]..>[RatingService]
+[FRM_Series]..>[RatingService]
+[FRM_Admin]..>[ContentService]
