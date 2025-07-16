@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Freeflix_WinForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be39e7fc091bc9a1f03a1b09c6af0974d43d5baf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd1891b3db2e89d6bd50814e1924551699a195c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Freeflix_WinForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Freeflix_WinForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

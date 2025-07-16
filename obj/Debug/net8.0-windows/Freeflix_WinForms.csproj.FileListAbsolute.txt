@@ -41,3 +41,6 @@ C:\Users\Matu\Documents\GitHub\Freeflix-C-\bin\Debug\net8.0-windows\Microsoft.Wi
 C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\Freeflix.C36BB6D4.Up2Date
 C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\Freeflix_WinForms.genruntimeconfig.cache
 C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\ref\Freeflix_WinForms.dll
+C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\Freeflix.Forms.FRM_Movies.resources
+C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\Freeflix_WinForms.Properties.Resources.resources
+C:\Users\Matu\Documents\GitHub\Freeflix-C-\obj\Debug\net8.0-windows\Freeflix.Forms.FRM_Series.resources

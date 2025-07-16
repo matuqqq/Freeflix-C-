@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\forms\\frm_series.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_series.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\forms\\frm_videoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_videoplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_series.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:forms\\frm_movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|c:\\users\\matu\\documents\\github\\freeflix-c-\\models\\baseaudiovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E8455C-1B00-29D4-8A87-B677BB155AD2}|Freeflix_WinForms.csproj|solutionrelative:models\\baseaudiovisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,32 +63,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FRM_Series.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Series.cs",
+              "RelativeDocumentMoniker": "Forms\\FRM_Series.cs",
+              "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Series.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FRM_Series.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:25:58.997Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FRM_Movies.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Movies.cs",
+              "RelativeDocumentMoniker": "Forms\\FRM_Movies.cs",
+              "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Movies.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FRM_Movies.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:19:43.315Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FRM_VideoPlayer.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_VideoPlayer.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_VideoPlayer.cs",
               "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_VideoPlayer.cs",
               "RelativeToolTip": "Forms\\FRM_VideoPlayer.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T11:44:46.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T03:12:50.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FRM_Main.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Main.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Main.cs",
@@ -91,19 +110,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FRM_VideoPlayer.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_VideoPlayer.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_VideoPlayer.cs",
               "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_VideoPlayer.cs [Dise\u00F1o]",
               "RelativeToolTip": "Forms\\FRM_VideoPlayer.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T03:11:45.551Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-15T03:11:45.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "BaseAudiovisual.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Models\\BaseAudiovisual.cs",
               "RelativeDocumentMoniker": "Models\\BaseAudiovisual.cs",
@@ -115,19 +133,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "FRM_Movies.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Movies.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Movies.cs",
               "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Movies.cs",
               "RelativeToolTip": "Forms\\FRM_Movies.cs",
-              "ViewState": "AgIAADEBAAAAAAAAAAAkwEgBAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T03:04:30.604Z"
+              "WhenOpened": "2025-07-15T03:04:30.604Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T03:12:50.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FRM_Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Login.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Login.cs",
@@ -138,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FRM_Login.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Login.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Login.cs",
@@ -150,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "FRM_Series.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Forms\\FRM_Series.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Series.cs",
@@ -158,11 +189,12 @@
               "RelativeToolTip": "Forms\\FRM_Series.cs",
               "ViewState": "AgIAAC4BAAAAAAAAAAAkwD4BAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T03:05:02.669Z"
+              "WhenOpened": "2025-07-15T03:05:02.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
