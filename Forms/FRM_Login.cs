@@ -14,6 +14,7 @@ namespace Freeflix.Forms
         private TextBox TXT_Username;
         private TextBox TXT_Password;
         private Button BTN_Login;
+        private Button BTN_Register;
         private Label LBL_Title;
         private Label LBL_Username;
         private Label LBL_Password;
@@ -36,6 +37,7 @@ namespace Freeflix.Forms
             LBL_Password = new Label();
             TXT_Password = new TextBox();
             BTN_Login = new Button();
+            BTN_Register = new Button();
             LBL_Error = new Label();
             PNL_LoginContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PIC_Logo).BeginInit();
@@ -50,10 +52,11 @@ namespace Freeflix.Forms
             PNL_LoginContainer.Controls.Add(LBL_Password);
             PNL_LoginContainer.Controls.Add(TXT_Password);
             PNL_LoginContainer.Controls.Add(BTN_Login);
+            PNL_LoginContainer.Controls.Add(BTN_Register);
             PNL_LoginContainer.Controls.Add(LBL_Error);
             PNL_LoginContainer.Location = new Point(40, 50);
             PNL_LoginContainer.Name = "PNL_LoginContainer";
-            PNL_LoginContainer.Size = new Size(320, 400);
+            PNL_LoginContainer.Size = new Size(320, 450);
             PNL_LoginContainer.BackColor = Color.FromArgb(35, 35, 35);
             PNL_LoginContainer.BorderStyle = BorderStyle.None;
             PNL_LoginContainer.TabIndex = 0;
@@ -138,9 +141,24 @@ namespace Freeflix.Forms
             BTN_Login.TabIndex = 6;
             BTN_Login.Click += BTN_Login_Click;
             // 
+            // BTN_Register
+            // 
+            BTN_Register.Location = new Point(20, 330);
+            BTN_Register.Name = "BTN_Register";
+            BTN_Register.Size = new Size(280, 40);
+            BTN_Register.Text = "REGISTRARSE";
+            BTN_Register.Font = new Font("Arial", 12, FontStyle.Bold);
+            BTN_Register.BackColor = Color.FromArgb(50, 50, 50);
+            BTN_Register.ForeColor = Color.White;
+            BTN_Register.FlatStyle = FlatStyle.Flat;
+            BTN_Register.Cursor = Cursors.Hand;
+            BTN_Register.FlatAppearance.BorderSize = 0;
+            BTN_Register.TabIndex = 7;
+            BTN_Register.Click += BTN_Register_Click;
+            // 
             // LBL_Error
             // 
-            LBL_Error.Location = new Point(20, 330);
+            LBL_Error.Location = new Point(20, 380);
             LBL_Error.Name = "LBL_Error";
             LBL_Error.Size = new Size(280, 40);
             LBL_Error.Text = "";
@@ -148,14 +166,14 @@ namespace Freeflix.Forms
             LBL_Error.ForeColor = Color.FromArgb(255, 100, 100);
             LBL_Error.TextAlign = ContentAlignment.MiddleCenter;
             LBL_Error.Visible = false;
-            LBL_Error.TabIndex = 7;
+            LBL_Error.TabIndex = 8;
             // 
             // FRM_Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(20, 20, 20);
-            ClientSize = new Size(400, 500);
+            ClientSize = new Size(400, 550);
             Controls.Add(PNL_LoginContainer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -180,7 +198,7 @@ namespace Freeflix.Forms
                 }
             };
 
-            // Add hover effects to button
+            // Add hover effects to buttons
             BTN_Login.MouseEnter += (sender, e) =>
             {
                 BTN_Login.BackColor = Color.FromArgb(200, 9, 20);
@@ -191,6 +209,16 @@ namespace Freeflix.Forms
                 BTN_Login.BackColor = Color.FromArgb(229, 9, 20);
             };
 
+            BTN_Register.MouseEnter += (sender, e) =>
+            {
+                BTN_Register.BackColor = Color.FromArgb(60, 60, 60);
+            };
+
+            BTN_Register.MouseLeave += (sender, e) =>
+            {
+                BTN_Register.BackColor = Color.FromArgb(50, 50, 50);
+            };
+
             // Set default values for testing
             TXT_Username.Text = "admin";
             TXT_Password.Text = "admin123";
@@ -199,6 +227,18 @@ namespace Freeflix.Forms
         private void BTN_Login_Click(object sender, EventArgs e)
         {
             ValidateLogin();
+        }
+
+        private void BTN_Register_Click(object sender, EventArgs e)
+        {
+            var registerForm = new FRM_Register();
+            if (registerForm.ShowDialog() == DialogResult.OK)
+            {
+                // Si el registro fue exitoso, limpiar los campos
+                TXT_Username.Clear();
+                TXT_Password.Clear();
+                TXT_Username.Focus();
+            }
         }
 
         private void TXT_Password_KeyPress(object sender, KeyPressEventArgs e)
@@ -253,10 +293,10 @@ namespace Freeflix.Forms
 
         private void ShowMainForm()
         {
-            this.Hide();
             var mainForm = new FRM_Main();
-            mainForm.FormClosed += (sender, e) => this.Close();
+            mainForm.FormClosed += (s, args) => this.Close();
             mainForm.Show();
+            this.Hide();
         }
     }
 }

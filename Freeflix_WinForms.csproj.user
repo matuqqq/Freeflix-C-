@@ -13,6 +13,9 @@
     <Compile Update="Forms\FRM_Movies.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FRM_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FRM_Series.cs">
       <SubType>Form</SubType>
     </Compile>

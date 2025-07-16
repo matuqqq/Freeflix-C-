@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matu\\Downloads\\project-bolt-sb1-znytetyf\\project\\Freeflix_WinForms\\Freeflix_WinForms.csproj": {}
+    "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Freeflix_WinForms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matu\\Downloads\\project-bolt-sb1-znytetyf\\project\\Freeflix_WinForms\\Freeflix_WinForms.csproj": {
+    "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Freeflix_WinForms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matu\\Downloads\\project-bolt-sb1-znytetyf\\project\\Freeflix_WinForms\\Freeflix_WinForms.csproj",
+        "projectUniqueName": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Freeflix_WinForms.csproj",
         "projectName": "Freeflix_WinForms",
-        "projectPath": "C:\\Users\\Matu\\Downloads\\project-bolt-sb1-znytetyf\\project\\Freeflix_WinForms\\Freeflix_WinForms.csproj",
+        "projectPath": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\Freeflix_WinForms.csproj",
         "packagesPath": "C:\\Users\\Matu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matu\\Downloads\\project-bolt-sb1-znytetyf\\project\\Freeflix_WinForms\\obj\\",
+        "outputPath": "C:\\Users\\Matu\\Documents\\GitHub\\Freeflix-C-\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.WindowsAPICodePack-Shell": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +70,7 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },
